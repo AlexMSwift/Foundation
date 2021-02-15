@@ -7,7 +7,7 @@ pkg.products = [
     .library(name: "PMKFoundation", targets: ["PMKFoundation"]),
 ]
 pkg.dependencies = [
-    .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.8.3")
+    .package(url: "https://github.com/AlexMSwift/PromiseKit", from: "6.13.4-beta.2")
 ]
 pkg.swiftLanguageVersions = [.v4, .v4_2, .v5]
 
@@ -32,5 +32,5 @@ target.exclude += [
 pkg.targets = [target]
 
 pkg.platforms = [
-   .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
+   .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
 ]
